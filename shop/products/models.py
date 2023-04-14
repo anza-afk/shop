@@ -18,7 +18,7 @@ class Category(CoreModel):
         verbose_name_plural = 'категории'
 
     def __str__(self):
-        return f'{self.id}: {self.title}'
+        return f'id:{self.id} {self.title}'
 
 
 class Product(CoreModel):
@@ -59,4 +59,4 @@ class Product(CoreModel):
         verbose_name_plural = 'продукты'
 
     def __str__(self):
-        return f'{self.id}: {self.title}'
+        return f'id:{self.id} {self.title}'
