@@ -12,6 +12,11 @@ urlpatterns = [
         name='product_list'
     ),
     path(
+        '<int:pk>',
+        ProductListView.as_view(),
+        name='product_list'
+    ),
+    path(
         'categories/',
         CategoryListView.as_view(),
         name='category_list'
