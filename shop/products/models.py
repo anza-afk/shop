@@ -10,7 +10,9 @@ class Category(CoreModel):
         db_index=True,
     )
     discount = models.FloatField(
-        verbose_name='скидка'
+        verbose_name='скидка',
+        blank=True,
+        null=True,
     )
 
     class Meta:
@@ -43,6 +45,7 @@ class Product(CoreModel):
     )
     discount = models.FloatField(
         verbose_name='скидка',
+        blank=True,
         null=True,
         default=None,
     )
