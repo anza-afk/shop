@@ -14,6 +14,6 @@ urlpatterns = [
     path(
         'catalog/',
         ProductListView.as_view(),
-        name='product_list'
+        name='catalog'
     ),
 ]
