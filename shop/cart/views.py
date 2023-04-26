@@ -12,9 +12,7 @@ def CartAdd(request, product_id):
     form = CartAddProductForm(request.POST)
     print(request.POST)
     if form.is_valid():
-        print('dsf')
         form_data = form.cleaned_data
-        print(form_data)
         cart.add(
             product=product,
             quantity=form_data['quantity'],
